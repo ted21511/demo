@@ -14,3 +14,7 @@ FROM   (SELECT tablespace_name,
         FROM   DBA_DATA_FILES
         GROUP  BY tablespace_name) b
 WHERE  a.tablespace_name = b.tablespace_name
+
+
+
+select fname from MyTbl where rownum = 1
